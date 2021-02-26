@@ -3,7 +3,13 @@ En el proyecto de maximización de venta en Alquería, se vió la necesidad de e
 
 ## Analísis & Software
 En el archivo [Final Cluster.ipynb](https://github.com/Coordinacion-Analitica/Cluster-Tendencia/blob/main/Final%20Cluster.ipynb) se encuentra los códigos en **Python** que se utilizaron en la clusterización de tendencias de ventas de los clientes de Bogotá.
-La clusterización se realizó mediante el método de agrupación jerárquica dada una matriz de enlace. Se utilizó la función **fcluster** del paquete **scipy.cluster.hierarchy**, para más información pueden remitirse a las siguientes páginas donde se especifica más a fondo las características de las funciones:
+La clusterización se realizó mediante el *método de agrupación jerárquica dada una matriz de enlace*. Se utilizó la función **fcluster** del paquete **scipy.cluster.hierarchy**, para más información pueden remitirse a las siguientes páginas donde se especifica las características de las funciones:
 
 * https://docs.scipy.org/doc/scipy/reference/cluster.hierarchy.html
 * https://docs.scipy.org/doc/scipy/reference/generated/scipy.cluster.hierarchy.fcluster.html
+
+## Tener en cuenta
+Es importante tener en cuenta lo siguiente al momento de ejecutar el algortimo:
+* El insumo prinicpal es **alq-analitica-dev.EXT.DIST_1-GRAL-SKU**.
+* El esquema de la clusterización está por tipología ya que los comportamientos de venta de cada uno de los clientes depende de este. 
+* El **método utilizado es supervizado**, lo cual signfica que la interpretbilidad del cluster debe ser dada por el usuario.  
