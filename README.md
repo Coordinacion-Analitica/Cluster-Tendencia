@@ -10,6 +10,7 @@ La clusterización se realizó mediante el *método de agrupación jerárquica d
 
 ## Tener en cuenta
 Es importante tener en cuenta lo siguiente al momento de ejecutar el algortimo:
-* El insumo prinicpal es **alq-analitica-dev.EXT.DIST_1-GRAL-SKU**.
-* El esquema de la clusterización está por tipología ya que los comportamientos de venta de cada uno de los clientes depende de este. 
+* El insumo prinicpal es **alq-analitica-dev.EXT.DIST_1-GRAL-SKU** en BigQuery.
+* El esquema de **la clusterización está por tipología** ya que los comportamientos de venta de cada uno de los clientes depende de este. 
 * El **método utilizado es supervizado**, lo cual signfica que la interpretbilidad del cluster debe ser dada por el usuario.  
+* El algoritmo genera una tabla de cliente-cluster que es enviada a **alq-analitica-dev.INPUT.DF_CLUSTER_DIST_1** en BigQuery.
